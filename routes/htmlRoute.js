@@ -1,15 +1,15 @@
-const app = require('express').Router();
+const html = require('express').Router();
 const path = require('path');
 
 
 // GET Route for homepage
-app.get('/', (req, res) =>
+html.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '../public/index.html'))
 );
 
 // GET Route for feedback page
-app.get('/notes', (req, res) =>
+html.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '../public/notes.html'))
 );
 
-module.exports = app;
+module.exports = html;
