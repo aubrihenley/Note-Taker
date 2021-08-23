@@ -1,5 +1,5 @@
 const express = require('express');
-const notesRoute = require('./routes/notesRoute.js');
+const notes = require('./routes/notes.js');
 const htmlRoute = require('./routes/htmlRoute.js');
 const PORT = process.env.PORT || 3001;
 
@@ -10,9 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/', htmlRoute); 
-app.use('/', notesRoute);
-
-app.use(express.static('public'));
+app.use('/', notes);
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
