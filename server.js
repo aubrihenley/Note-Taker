@@ -1,7 +1,6 @@
 const express = require('express');
-const path = require('path');
-// const api = require('./routes/index.js');
-const htmlRoutes = require('./routes/htmlRoutes');
+const notesRoute = require('./routes/notesRoute.js');
+const htmlRoute = require('./routes/htmlRoute');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -10,8 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', htmlRoutes);
-// app.use('/api', api);
+app.use('/', htmlRoute); 
+app.use('/', notesRoute);
 
 app.use(express.static('public'));
 
