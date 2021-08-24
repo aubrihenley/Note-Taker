@@ -22,7 +22,7 @@ You can use this app to keep track of daily tasks. On the main page clicking on 
 
 
 [Application Video](https://drive.google.com/file/d/1VWBRYg7UCzn1bvTgT9sCtXfxGQ4q3lND/view)
-[Link to Deployed App](https://young-savannah-53005.herokuapp.com/)
+[Link to Deployed App](https://young-savannah-53005.herokuapp.com/)\n
 [Link to GitHub Repository(https://github.com/aubrihenley/Note-Taker)
  
 ## Credits
