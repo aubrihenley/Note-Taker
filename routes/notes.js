@@ -30,13 +30,13 @@ notes.get('/notes', (req, res) => {
   });
 
   //DELETE Route to delete notes
-  notes.delete("/notes/:id", (req, res) =>{
+  notes.delete("/notes/:id", async(req, res) =>{
     const { id } = req.params;
-    const note = json.parse(fs.readFileSync("./db/db.json", "utf8"));
-    const notesIndex = note.findIndex(note => note.id === id);
- console.log(req.params);
+    const note = JSON.parse(await readFromFile("./db/db.json", "utf8"));
+    const notesIndex = note.findIndex(note => note.note_id === id);
+    console.log(notesIndex);
     note.splice(notesIndex, 1);
-    writeToFile("./db/db.json");
+    await writeToFile("./db/db.json", note);
     return res.send();
   })
 
