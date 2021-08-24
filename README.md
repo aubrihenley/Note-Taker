@@ -19,7 +19,7 @@ You can use this app to keep track of daily tasks. Clicking on the note title wi
 
 ![Screenshot of App]()
 
-
+![Application Video](https://drive.google.com/file/d/1VWBRYg7UCzn1bvTgT9sCtXfxGQ4q3lND/view)
 
 ## Credits
 Partial code provided by UNC Chapel Hill Full Stack Webdevelopment course. Refactoring done by Aubri Henley.
